@@ -1,0 +1,26 @@
+[2020-05-09 15:57:11] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\canBePromoter.php : 8: message: this is can be promoter "127.0.0.1"
+[2020-05-09 15:57:11] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\canBePromoter.php : 14: message: the params: {"userId":"5ea568778ed0a"}
+[2020-05-09 15:57:18] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isPromoter.php : 8: message: this is isPromoter "127.0.0.1"
+[2020-05-09 15:57:18] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isPromoter.php : 13: message: the params: {"userId":"2020042823000540001"}
+[2020-05-09 15:57:23] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getAward.php : 11: message: this is getAward "192.168.110.232"
+[2020-05-09 15:57:23] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getAward.php : 16: message: the params: {"userId":"2020042901000540008"}
+[2020-05-09 15:58:38] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getAward.php : 11: message: this is getAward "192.168.110.232"
+[2020-05-09 15:58:38] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getAward.php : 16: message: the params: {"userId":"2020042823000540001"}
+[2020-05-09 16:02:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getAward.php : 11: message: this is getAward "192.168.110.124"
+[2020-05-09 16:02:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getAward.php : 16: message: the params: {"userId":"2019061311000003004"}
+[2020-05-09 16:03:08] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\canBePromoter.php : 8: message: this is can be promoter "192.168.110.124"
+[2020-05-09 16:03:08] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\canBePromoter.php : 14: message: the params: {"userId":"=2019061311000003004"}
+[2020-05-09 16:07:06] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isPromoter.php : 8: message: this is isPromoter "192.168.110.124"
+[2020-05-09 16:07:06] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isPromoter.php : 13: message: the params: {"userId":"2019061311000003004"}
+[2020-05-09 16:10:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "192.168.110.124"
+[2020-05-09 16:10:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":""}
+[2020-05-09 16:10:48] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "192.168.110.124"
+[2020-05-09 16:10:48] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061311000003004"}
+[2020-05-09 16:10:57] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "192.168.110.124"
+[2020-05-09 16:10:57] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061311000003004"}
+[2020-05-09 16:11:06] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "192.168.110.124"
+[2020-05-09 16:11:06] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061311000003004"}
+[2020-05-09 16:11:28] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isAward.php : 8: message: this is isAward "192.168.110.124"
+[2020-05-09 16:11:28] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isAward.php : 13: message: the params: {"userId":"2019061311000003004"}
+[2020-05-09 16:11:36] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isAward.php : 8: message: this is isAward "192.168.110.124"
+[2020-05-09 16:11:36] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isAward.php : 13: message: the params: {"userId":"2019061311000003004"}

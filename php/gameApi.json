@@ -1,0 +1,74 @@
+{
+  "name": "gameApi",
+  "apis": [
+    {
+      "name": "玩家注册",
+      "url": "/trunk/php/gameApi/playerRegister.php",
+      "type": "post",
+      "req": {
+        "openid": {"type": "text", "desc": "openid"},
+        "id": {"type": "text", "desc": "玩家id"},
+        "username": {"type": "text", "desc": "用户名"},
+        "tel": {"type": "text", "desc": "电话"}
+      },
+      "res": {
+        "bool": {"type": "bool", "desc": "true|false"}
+      }
+    },
+    {
+      "name": "玩家充值",
+      "url": "/trunk/php/gameApi/playerCharge.php",
+      "type": "post",
+      "req": {
+        "userId": {"type": "int", "desc": "玩家id"},
+        "orderNo": {"type": "text", "desc": "订单号"},
+        "gameId": {"type": "text", "desc": "游戏编号"},
+        "amount": {"type": "int", "desc": "充值数量"},
+        "subject": {"type": "int", "desc": "充值，默认乐券(1)"},
+        "mode": {"type": "int", "desc": "充值方式，1为微信，2为支付宝"}
+      },
+      "res": {
+        "bool": {"type": "bool", "desc": "true|false"}
+      }
+    },
+    {
+      "name": "玩家消耗",
+      "url": "/trunk/php/gameApi/playerConsume.php",
+      "type": "post",
+      "req": {
+        "userId": {"type": "int", "desc": "玩家id"},
+        "orderNo": {"type": "text", "desc": "消耗订单号"},
+        "gameId": {"type": "text", "desc": "游戏编号"},
+        "amount": {"type": "int", "desc": "充值数量"},
+        "subject": {"type": "int", "desc": "消耗类型，默认乐券(1)"}
+      },
+      "res": {
+        "bool": {"type": "bool", "desc": "true|false"}
+      }
+    },
+    {
+      "name": "资格查询",
+      "url": "/trunk/php/gameApi/isAward.php",
+      "type": "post",
+      "req": {
+        "userId": {"type": "int", "desc": "玩家id"},
+        "amount": {"type": "text", "desc": "充值大于多少钱"},
+        "count": {"type": "text", "desc": "符合要求的个数"}
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": "正确返回20000" } ,
+        "data": {
+          "myself": {"type": "text", "desc": "自己充值量"},
+          "list": {
+            "type": "objectArray", "desc": "数据列表",
+            "properties": {
+              "userId" : {"type": "text", "desc": "玩家id"},
+              "rid" : {"type": "text", "desc": "rid"},
+              "charge_total": {"type": "text", "desc": "充值总额"}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

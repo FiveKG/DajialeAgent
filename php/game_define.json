@@ -1,0 +1,687 @@
+{
+  "name" : "operation",
+  "service_type" : "game",
+  
+  "apis" : [
+    {
+      "name" : "游戏概况",
+      "url" : "trunk/php/backend/game/summary.php",
+      "type" : "post",
+      "req": {
+        "date": { "type": "text", "desc": "查询时间" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "current" : { "type": "text",  "desc": "当前在线人数"},
+          "average" : { "type": "text",  "desc": "平均在线人数"},
+          "max" : { "type": "text",  "desc": "最高在线人数"},
+          "timeList" : {"type": "array",  "desc": "玩家每小时在线统计(数组下标0表示0点，直到23点)" }
+        }
+      }
+    },
+    {
+      "name" : "日报",
+      "url" : "trunk/php/backend/game/daily.php",
+      "type" : "get",
+      "req": {
+        "startDate": { "type": "text",  "desc": "起始时间,不给默认全部时间" },
+        "endDate": { "type": "text",  "desc": "末尾时间,不给默认全部时间" },
+        "type": { "type": "text",  "desc": "查询类型(\"new_players\", \"active_players\", \"charge_players\", \"game_total\")" },
+        "page": { "type": "text",  "desc": "页" },
+        "limit": { "type": "text",  "desc": "偏移量" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total" :  { "type": "int",  "desc": "返回的数据量" },
+          "new_player_total" :  { "type": "int",  "desc": "新玩家合计" },
+          "old_player_total" :  { "type": "int",  "desc": "老玩家合计" },
+          "list" : {
+            "type": "objectArray",
+            "desc": "时间区间内所有时间的数据列表",
+            "properties": {"date": {"type": "text", "desc": "日期"},
+              "new_player": {"type": "int", "desc": "新增玩家数量"},
+              "old_player": {"type": "int", "desc": "老玩家数量"},
+              "active": {"type": "int", "desc": "总活跃数量"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name" : "所有玩家信息",
+      "summary": "获取所有玩家信息",
+      "url" : "trunk/php/backend/game/allPlayers.php",
+      "type" : "get",
+      "req": {
+        "page": { "type": "text",  "desc": "页" },
+        "limit": { "type": "text",  "desc": "偏移量" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total" :  { "type": "text",  "desc": "总共数据量" },
+          "list": {
+            "type": "objectArray", "desc": "玩家信息列表",
+            "properties": {
+              "rid": {"type": "text", "desc": "玩家id"},
+              "nick": {"type": "text", "desc": "用户名"},
+              "mobile_phone": {"type": "text", "desc": "手机号码"},
+              "leQuan": {"desc": "乐券"},
+              "award": {"type": "text", "desc": "奖金"},
+              "ladder": {"type": "text",  "desc": "天梯积分"},
+              "race": {"type": "text",  "desc": "比赛次数"},
+              "champion": {"type": "text",  "desc": "冠军次数"},
+              "online": {"type": "text", "desc": "平均在线时间"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name" : "查询单个玩家信息",
+      "summary": "获取单个玩家信息",
+      "url" : "trunk/php/backend/game/getPlayer.php",
+      "type" : "get",
+      "req": {
+        "rid": { "type": "text",  "desc": "玩家id" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total" :  { "type": "text",  "desc": "总共数据量" },
+          "list": {
+            "type": "objectArray", "desc": "玩家信息列表",
+            "properties": {
+              "rid": {"type": "text", "desc": "玩家id"},
+              "nick": {"type": "text", "desc": "用户名"},
+              "mobile_phone": {"type": "text", "desc": "手机号码"},
+              "leQuan": {"desc": "乐券"},
+              "award": {"type": "text", "desc": "奖金"},
+              "ladder": {"type": "text",  "desc": "天梯积分"},
+              "race": {"type": "text",  "desc": "比赛次数"},
+              "champion": {"type": "text",  "desc": "冠军次数"},
+              "online": {"type": "text", "desc": "平均在线时间"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name" : "创建门票",
+      "summary": "批量生成门票",
+      "url" : "/trunk/php/backend/game/generateTicket",
+      "type" : "get",
+      "req": {
+        "count": { "type": "text",  "desc": "数量" },
+        "type": { "type": "text",  "desc": "门票类型(当前默认为1)" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {"type":  "bool", "desc": "添加结果"}
+      }
+    },
+    {
+      "name" : "获取门票列表",
+      "summary": "获取门票列表",
+      "url" : "/trunk/php/backend/game/allTicket",
+      "type" : "get",
+      "req": {
+        "page": { "type": "text",  "desc": "页码" },
+        "limit": { "type": "text",  "desc": "偏移量" },
+        "status": { "type": "text",  "desc": "门票状态(0为可用，1为被使用)" },
+        "type": { "type": "text",  "desc": "门票类型(当前默认为1)" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total": "objectArray", "desc": "门票数量",
+          "properties": {
+          "id": {"type": "text", "desc": "门票ID"},
+          "status": {"type": "text", "desc": "门票状态(0为可用，1为被使用)"},
+          "type": {"type": "text", "desc": "门票类型(当前默认为1)"}
+          }
+        }
+      }
+    },
+    {
+      "name" : "查询一张门票",
+      "summary": "查询一张门票",
+      "url" : "/trunk/php/backend/game/getTicket",
+      "type" : "get",
+      "req": {
+        "id": { "type": "text",  "desc": "门票id" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total": "objectArray", "desc": "门票数量",
+          "properties": {
+            "id": {"type": "text", "desc": "门票ID"},
+            "status": {"type": "text", "desc": "门票状态(0为可用，1为被使用)"},
+            "type": {"type": "text", "desc": "门票类型(当前默认为1)"}
+          }
+        }
+      }
+    },
+    {
+      "name" : "玩家管理信息",
+      "url" : "trunk/php/backend/game/userManageInfo.php",
+      "type" : "get",
+      "req": {
+        "userId" : { "type": "text",  "desc": "玩家id" },
+        "page": { "type": "text",  "desc": "页" },
+        "limit": { "type": "text",  "desc": "偏移量" },
+        "type" : {"type": "text",  "desc": "('chargeInfo', 'cashInfo', 'joinInfo', 'exchangeInfo')" },
+        "startDate" : { "type": "text",  "desc": "开始时间)" },
+        "endDate" : { "type": "text",  "desc": "结束时间" }
+      },
+      "res": {"type": "text","desc": "参考settings.json完成"}
+    },
+    {
+      "name" : "财务概况",
+      "url" : "trunk/php/backend/game/financeSummary.php",
+      "type" : "get",
+      "req": {
+        "page": { "type": "text",  "desc": "页" },
+        "limit": { "type": "text",  "desc": "偏移量" },
+        "startDate" : { "type": "text",  "desc": "开始时间)" },
+        "endDate" : { "type": "text",  "desc": "结束时间" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total": {"type": "text", "desc": "数据量"},
+          "charge_total": {"type": "text", "desc": "总充值"},
+          "charge_number": {"type": "text", "desc": "总充值人数"},
+          "charge_count": {"type": "text", "desc": "总充值次数"},
+          "serviceFee": {"type": "text", "desc": "总服务费"},
+          "list": {
+            "type": "objectArray", "desc": "数据列表",
+            "properties": {
+              "date" : {"type": "text", "desc": "日期"},
+              "charge_total" : {"type": "text", "desc": "总充值(天)"},
+              "serviceFee": {"type": "text", "desc": "总服务费(天)"},
+              "charge_number" : {"type": "text", "desc": "总充值人数(天)"},
+              "charge_count" : {"type": "text", "desc": "总充值次数(天)"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name" : "充值记录",
+      "url" : "trunk/php/backend/game/chargeList.php",
+      "type" : "get",
+      "req": {
+        "page": { "type": "text",  "desc": "页" },
+        "limit": { "type": "text",  "desc": "偏移量" },
+        "startDate" : { "type": "text",  "desc": "开始时间)" },
+        "endDate" : { "type": "text",  "desc": "结束时间" },
+        "tradeNo" : { "type": "text",  "desc": "订单号" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total": {"type": "text", "desc": "数据量"},
+          "charge_total": {"type": "text", "desc": "总充值"},
+          "list": {
+            "type": "objectArray", "desc": "数据列表",
+            "properties": {
+              "tradeNo" : {"type": "text", "desc": "订单号"},
+              "createTime" : {"type": "text", "desc": "创建时间"},
+              "userId": {"type": "text", "desc": "用户id"},
+              "username" : {"type": "text", "desc": "用户名"},
+              "amount" : {"type": "text", "desc": "充值数额"},
+              "subject" : {"type": "text", "desc": "购买商品"},
+              "mode" : {"type": "text", "desc": "充值方式"},
+              "status" : {"type": "text", "desc": "状态"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name" : "创建赛事",
+      "url" : "trunk/php/backend/game/createMatch",
+      "type" : "post",
+      "req": {
+        "match": {
+          "localeName" : {"type": "text", "desc": "场地名称"},
+          "perNumb" : {"type": "text", "desc": "人数"},
+          "gameType" : {"type": "text", "desc": "游戏类型"},
+          "userNumb" : {"type": "text", "desc": "真实玩家数量"},
+          "ctrlCardLv" : {"type": "text", "desc": "控牌等级"},
+          "category" : {"type": "text", "desc": "赛制分类"},
+          "maxNumb" : {"type": "text", "desc": "每台最多人数"},
+          "matchServerId" : {"type": "text", "desc": "匹配服编号"},
+          "onoff" : {"type": "text", "desc": "启用开关"}
+        },
+        "matchValidator" : {
+          "sameIP" : {"type": "text", "desc": "相同IP检测"},
+          "onlyAI" : {"type": "text", "desc": "仅匹配AI"},
+          "sameDesk" : {"type": "text", "desc": "同桌校验器"},
+          "winRatio" : {"type": "text", "desc": "胜率校验器"},
+          "winStreak" : {"type": "text", "desc": "连胜校验器"},
+          "onoff" : {"type": "text", "desc": "匹配AI或玩家开关"},
+          "ipNoDesk" : {"type": "text", "desc": "最近多少局不能匹配IP"}
+        },
+        "casino" : {
+          "condition" : {"type": "text", "desc": "入房标准"},
+          "category" : {"type": "text", "desc": "场地分类"},
+          "outRule" : {"type": "text", "desc": "被踢标准"},
+          "entranceFee" : {"type": "text", "desc": "房费"},
+          "roomCost" : {"type": "text", "desc": "从获胜者扣除百分比"},
+          "carryMax" : {"type": "text", "desc": "最高携带"},
+          "winMax" : {"type": "text", "desc": "输赢上限"},
+          "baseLine" : {"type": "text", "desc": "每局底分"},
+          "tactics" : {"type": "text", "desc": "匹配账号"}
+        },
+        "race" : {
+          "raceTime" : {"type": "text", "desc": "比赛时间(字符串)"},
+          "enrollTime" : {"type": "text", "desc": "报名时间(字符串)"},
+          "round" :{"type": "text", "desc": "比赛轮数"},
+          "pernum" : {"type": "text", "desc": "每轮局数"},
+          "userNumb" : {"type": "text", "desc": "参赛人数"},
+          "score" : {"type": "text", "desc": "初始积分"},
+          "condition" : {"type": "text", "desc": "参赛条件"},
+          "category" : {"type": "text", "desc": "场地分类"},
+          "outRule" : {"type": "text", "desc": "被踢标准"},
+          "roomCost" :{"type": "text", "desc": "服务费"},
+          "baseLine" : {"type": "text", "desc": "每局底分"}
+        },
+        "award" : {
+          "minId" :  {"type": "text", "desc": "最小名次"},
+          "maxId" :  {"type": "text", "desc": "最大名次"},
+          "awards" : {"type": "text", "desc": "奖励"}
+        }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {"type":  "bool", "desc": "添加结果"}
+      }
+    },
+    {
+      "name" : "添加的赛事列表",
+      "url" : "trunk/php/backend/game/matchList",
+      "type" : "get",
+      "req": {
+        "page": { "type": "text",  "desc": "页" },
+        "limit": { "type": "text",  "desc": "偏移量" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total" :  { "type": "text",  "desc": "总共数据量" },
+          "list": {
+            "type": "objectArray", "desc": "赛事列表",
+            "properties": {
+              "localeId" : {"type": "text", "desc": "场次"},
+              "localeName" : {"type": "text", "desc": "赛事名称"},
+              "group" : {"type": "text", "desc": "匹配分组"},
+              "perNumb" : {"type": "text", "desc": "人数"},
+              "userNumb" : {"type": "text", "desc": "真实玩家数量"},
+              "gameType" : {"type": "text", "desc": "游戏类型"},
+              "ctrlCardLv" : {"type": "text", "desc": "控牌等级"},
+              "category" : {"type": "text", "desc": "赛制分类"},
+              "maxNumb" : {" type": "text", "desc": "台最多人数"},
+              "matchServerId" : {"type": "text", "desc": "匹配服编号"},
+              "onoff" : {"type": "text", "desc": "启用开关"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name" : "具体赛事情况",
+      "url" : "trunk/php/backend/game/detailMatch",
+      "type" : "get",
+      "req": {
+        "localeId": { "type": "text",  "desc": "赛事id" },
+        "type": { "type": "text",  "desc": "查看类型(\"casino\", \"race\", \"award\", \"matchValidator\")" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "casino": {
+            "id": {"type": "text", "desc": "id"},
+            "localeId": {"type": "text", "desc": "赛事id"},
+            "localeName": {"type": "text", "desc": "赛事名称"},
+            "condition": {"type": "text", "desc": "参赛标准"},
+            "category":{"type": "text", "desc": "场地分类"},
+            "outRule": {"type": "text", "desc": "淘汰标准"},
+            "entranceFee":{"type": "text", "desc": "报名费"},
+            "roomCost":{"type": "text", "desc": "抽水"},
+            "carryMax": {"type": "text", "desc": "最高携带"},
+            "winMax": {"type": "text", "desc": "输赢上限"},
+            "baseLine": {"type": "text", "desc": "每局底分"},
+            "edition": {"type": "text", "desc": "版本号"}
+          }
+        }
+      }
+    },
+    {
+      "name" : "游戏中的赛事列表",
+      "url" : "trunk/php/backend/game/matchingList",
+      "type" : "get",
+      "req": {
+        "page": { "type": "text",  "desc": "页" },
+        "limit": { "type": "text",  "desc": "偏移量" },
+        "type" : {"type": "text",  "desc": "waiting/doing" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total" :  { "type": "text",  "desc": "总共数据量" },
+          "list": {
+            "type": "objectArray", "desc": "游戏中的赛事列表",
+            "properties": {
+              "id" : {"type": "text", "desc": "id"},
+              "race_time" : {"type": "text", "desc": "开赛时间(时间戳)"},
+              "numb": {"type": "text", "desc": "正在打游戏轮数"},
+              "pernum" : {"type": "text", "desc": "当前轮第几局"},
+              "localeName" : {"type": "text", "desc": "赛事名称"},
+              "category" : {"type": "text", "desc": "赛事类型"},
+              "gameType" : {"type": "text", "desc": "游戏类型"},
+              "userNumb" : {"type": "text", "desc": "开赛人数"},
+              "many" : {"type": "text", "desc": "报名人数"},
+              "round" : {" type": "text", "desc": "比赛轮数"},
+              "condition" : {"type": "text", "desc": "报名条件"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name" : "更新赛事",
+      "url" : "trunk/php/backend/game/updateMatch",
+      "type" : "post",
+      "req": {
+        "type": { "type": "text",  "desc": "修改类型(\"match\",\"casino\", \"race\", \"award\", \"matchValidator\")" },
+        "data": {
+          "match": {
+            "localeId" : {"type": "text", "desc": "赛事id"},
+            "localeName" : {"type": "text", "desc": "场地名称"},
+            "perNumb" : {"type": "text", "desc": "人数"},
+            "category" : {"type": "text", "desc": "赛制分类"},
+            "gameType" : {"type": "text", "desc": "游戏类型"},
+            "userNumb" : {"type": "text", "desc": "真实玩家数量"},
+            "ctrlCardLv" : {"type": "text", "desc": "控牌等级"},
+            "maxNumb" : {"type": "text", "desc": "每台最多人数"},
+            "matchServerId" : {"type": "text", "desc": "匹配服编号"},
+            "onoff" : {"type": "text", "desc": "启用开关"}
+          },
+          "matchValidator" : {
+            "group" : {"type": "text", "desc": "id"},
+            "sameIP" : {"type": "text", "desc": "相同IP检测"},
+            "onlyAI" : {"type": "text", "desc": "仅匹配AI"},
+            "sameDesk" : {"type": "text", "desc": "同桌校验器"},
+            "winRatio" : {"type": "text", "desc": "胜率校验器"},
+            "winStreak" : {"type": "text", "desc": "连胜校验器"},
+            "onoff" : {"type": "text", "desc": "匹配AI或玩家开关"},
+            "ipNoDesk" : {"type": "text", "desc": "最近多少局不能匹配IP"}
+          },
+          "casino" : {
+            "id" : {"type": "text", "desc": "id"},
+            "condition" : {"type": "text", "desc": "入房标准"},
+            "category" : {"type": "text", "desc": "场地分类"},
+            "outRule" : {"type": "text", "desc": "被踢标准"},
+            "entranceFee" : {"type": "text", "desc": "房费"},
+            "roomCost" : {"type": "text", "desc": "从获胜者扣除百分比"},
+            "carryMax" : {"type": "text", "desc": "最高携带"},
+            "winMax" : {"type": "text", "desc": "输赢上限"},
+            "baseLine" : {"type": "text", "desc": "每局底分"}
+          },
+          "race" : {
+            "id" : {"type": "text", "desc": "id"},
+            "raceTime" : {"type": "text", "desc": "比赛时间(非时间戳,可为空,代表即时赛)"},
+            "enrollTime" : {"type": "text", "desc": "报名时间（非时间戳，可为空,代表即时赛）"},
+            "round" :{"type": "text", "desc": "比赛轮数"},
+            "pernum" : {"type": "text", "desc": "每轮局数"},
+            "userNumb" : {"type": "text", "desc": "参赛人数"},
+            "score" : {"type": "text", "desc": "初始积分"},
+            "condition" : {"type": "text", "desc": "参赛条件"},
+            "category" : {"type": "text", "desc": "场地分类"},
+            "outRule" : {"type": "text", "desc": "被踢标准"},
+            "roomCost" :{"type": "text", "desc": "服务费"},
+            "baseLine" : {"type": "text", "desc": "每局底分"},
+            "tactics" : {"type": "text", "desc": "匹配账号"}
+          },
+          "award" : {
+            "id" : {"type": "text", "desc": "id"},
+            "minId" :  {"type": "text", "desc": "最小名次"},
+            "maxId" :  {"type": "text", "desc": "最大名次"},
+            "awards" : {"type": "text", "desc": "奖励"}
+          }
+        }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+          "data": {"type":  "bool", "desc": "添加结果"}
+        }
+      }
+    },
+    {
+      "name" : "添加天梯梯度配置",
+      "url" : "trunk/php/backend/game/createLadderScore",
+      "type" : "post",
+      "req": {
+        "id": { "type": "text",  "desc": "人数" },
+        "grad": { "type": "text",  "desc": "排名对应的梯度值" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": { "type": "true|string", "desc":"成功返回true,错误返回错误信息"}
+      }
+    },
+    {
+      "name" : "添加天梯称号配置",
+      "url" : "trunk/php/backend/game/createLadderTitle",
+      "type" : "post",
+      "req": {
+        "scoreMax": { "type": "text",  "desc": "区间最高积分" },
+        "title": { "type": "text",  "desc": "积分称谓" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": { "type": "true|string", "desc":"成功返回true,错误返回错误信息"}
+      }
+    },
+    {
+      "name" : "添加天梯奖励配置",
+      "url" : "trunk/php/backend/game/createLadderAward",
+      "type" : "post",
+      "req": {
+        "rankMax": { "type": "text",  "desc": "名次上限" },
+        "weekGiveback": { "type": "text",  "desc": "周榜抵扣金额" },
+        "weekTicketNumb": { "type": "text",  "desc": "周榜门票张数" },
+        "weekTicketId": { "type": "text",  "desc": "周榜门票id" },
+        "monthGiveback": { "type": "text",  "desc": "月榜抵扣金额" },
+        "monthTicketNumb": { "type": "text",  "desc": "月榜门票张数" },
+        "monthTicketId": { "type": "text",  "desc": "月榜门票id" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": { "type": "true|string", "desc":"成功返回true,错误返回错误信息"}
+      }
+    },
+    {
+      "name" : "确认推送配置",
+      "url" : "trunk/php/backend/game/pushCfg2Game",
+      "type" : "get",
+      "req": {
+        "type": { "type": "text",  "desc": "[\"match\",\"ladder\"],推送类型目前有赛事配置和天梯配置，默认全选" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": { "type": "true|string", "desc":"成功返回true,错误返回错误信息"}
+      }
+    },
+    {
+      "name" : "客户端查看错误栈",
+      "url" : "trunk/php/backend/game/getError.php",
+      "type" : "get",
+      "req": {
+        "startDate": { "type": "text",  "desc": "起始时间,不给默认全部时间" },
+        "endDate": { "type": "text",  "desc": "末尾时间,不给默认全部时间" },
+        "page": { "type": "text",  "desc": "页" },
+        "limit": { "type": "text",  "desc": "偏移量" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total" :  { "type": "text",  "desc": "总共数据量" },
+          "list": {
+            "type": "objectArray", "desc": "错误列表",
+            "properties": {
+              "id" : {"type": "text", "desc": "id"},
+              "error" : {"type": "text", "desc": "错误信息"},
+              "create_at" : {"type": "text", "desc": "日期"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name" : "添加管理员",
+      "url" : "trunk/php/backend/game/addAdmin",
+      "type" : "post",
+      "req": {
+        "username" : {"type": "text", "desc": "用户名"},
+        "password" : {"type": "text", "desc": "密码"},
+        "weight" : {"type": "text", "desc": "级别"},
+        "authority" : {"type": "text", "desc": "权限"},
+        "remark" : {"type": "text", "desc": "备注"}
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": { "type":  "bool", "desc": "添加结果" }
+      }
+    },
+    {
+      "name" : "管理员列表",
+      "url" : "trunk/php/backend/game/adminList",
+      "type" : "post",
+      "req": {},
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+            "total" : {"type": "text", "desc": "总的管理员数量"},
+            "list" : {
+              "type": "objectArray", "desc": "管理员列表",
+              "properties": {
+                "id" : {"type": "text", "desc": "id"},
+                "username" : {"type": "text", "desc": "昵称"},
+                "weight" : {"type": "text", "desc": "权重"},
+                "remark" : {"type": "text", "desc": "备注"}
+              }}
+        }
+      }
+    },
+    {
+      "name" : "删除管理员",
+      "url" : "trunk/php/backend/game/deleteAdmin",
+      "type" : "get",
+      "req": {
+        "userId": { "type": "text",  "desc": "删除id" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": { "type":  "bool", "desc": "删除结果" }
+      }
+    },
+    {
+      "name" : "登录",
+      "url" : "trunk/php/backend/game/login",
+      "type" : "post",
+      "req": {
+        "username" :  { "type": "text" , "desc": "用户名" } ,
+        "password" : { "type": "text" , "desc": "密码" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "Jwt" : { "type": "text" , "desc": "token"  }
+        }
+      }
+    },
+    {
+      "name" : "登出",
+      "url" : "trunk/php/backend/game/logout",
+      "type" : "get",
+      "req": {},
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": { "type":  "text", "desc": "" }
+      }
+    },
+    {
+      "name" : "推广员列表",
+      "url" : "trunk/php/backend/game/promotion/list",
+      "type" : "get",
+      "req": {
+        "page" :  { "type": "text" , "desc": "页码" },
+        "limit" :  { "type": "text" , "desc": "便宜量" },
+        "type" :  { "type": "text" , "desc": "类型" },
+        "rid" : {"type": "text" , "desc": "搜索用玩家rid"}
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": {
+          "total" : {"type": "text", "desc": "总数量"},
+          "list" : {
+            "type": "objectArray", "desc": "推广员列表",
+            "properties": {
+              "rid" : {"type": "text", "desc": "玩家rid"},
+              "username" : {"type": "text", "desc": "昵称"},
+              "parent_id" : {"type": "text", "desc": "代理商id"},
+              "from_uid" : {"type": "text", "desc": "受邀于"},
+              "pro_uid" : {"type": "text", "desc": "上级推广员"},
+              "status" : {"type": "text", "desc": "状态"},
+              "create_at" : {"type": "text", "desc": "创建时间"},
+              "request" : {"type": "object", "desc": "成为推官员要求",
+                "properties": {
+                  "charge_total" : {"type": "text", "desc": "下级玩家要求充值数额"},
+                  "my_charge_total" : {"type": "text", "desc": "自身要求充值数额"},
+                  "count" : {"type": "text", "desc": "下级玩家发展数量"}
+                }
+              },
+              "response" : {
+                "type": "objectArray",
+                "desc": "成为推官员要求",
+                "properties": {
+                  "charge_total": {"type": "text", "desc": "下级玩家总额"},
+                  "list": {
+                    "type": "object",
+                    "desc": "下级玩家列表",
+                    "properties": {
+                      "userId": {"type": "text", "desc": "玩家userid"},
+                      "rid": {"type": "text", "desc": "玩家rid"},
+                      "charge_total": {"type": "text", "desc": "充值总额度"}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name" : "审核推广员",
+      "url" : "trunk/php/backend/promotion/operatePromoter",
+      "type" : "get",
+      "req": {
+        "rid" :  { "type": "text" , "desc": "rid" },
+        "type" :  { "type": "text" , "desc": "true||false" }
+      },
+      "res": {
+        "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+        "data": { "type":  "bool", "desc": "成功/失败" }
+      }
+    }
+  ]
+}

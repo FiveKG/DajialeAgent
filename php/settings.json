@@ -1,0 +1,61 @@
+{
+  "pages": {
+    "dailyReport" : {
+      "tabs": [
+        {
+          "title": "新增玩家",
+          "key": "new_players",
+          "column": [
+            { "prop": "create_at", "label": "日期", "sortable": false },
+            { "prop": "oneTotal", "label": "某天新增玩家数量", "sortable": false }
+          ]
+        },{
+          "title": "活跃玩家",
+          "key": "active_players",
+          "column": [
+            { "prop": "date", "label": "日期", "sortable": false },
+            { "prop": "new_player", "label": "新玩家", "sortable": false },
+            { "prop": "old_player", "label": "老玩家", "sortable": false },
+            { "prop": "active", "label": "当天活跃数量", "sortable": false }
+          ]
+        },{
+          "title": "充值玩家",
+          "key": "charge_players",
+          "column": [
+            { "prop": "date", "label": "日期", "sortable": false },
+            { "prop": "new_player", "label": "新玩家", "sortable": false },
+            { "prop": "old_player", "label": "老玩家", "sortable": false },
+            { "prop": "active", "label": "当天活跃数量", "sortable": false }
+          ]
+        },{
+          "title": "总场次",
+          "key": "game_total",
+          "column": [
+            { "prop": "date", "label": "日期", "sortable": false },
+            { "prop": "1", "label": "快速赛", "sortable": false },
+            { "prop": "2", "label": "晋级赛", "sortable": false },
+            { "prop": "3", "label": "定时赛", "sortable": false },
+            { "prop": "4", "label": "大奖赛", "sortable": false },
+            { "prop": "5", "label": "好友赛", "sortable": false }
+          ]
+        }
+      ]
+    },
+    "managementPlayer": {
+      "tabs": [
+       {
+          "title": "充值信息",
+          "key": "chargeInfo",
+          "column": [
+            { "prop": "create_at", "label": "充值日期", "sortable": false },
+            { "prop": "charge_amount", "label": "充值额度", "sortable": false },
+            { "prop": "currency", "label": "币种", "sortable": false },
+            { "prop": "status", "label": "充值状态", "sortable": false },
+            { "prop": "mode", "label": "充值方式", "sortable": false }
+
+          ]
+       }
+      ]
+    }
+  }
+}

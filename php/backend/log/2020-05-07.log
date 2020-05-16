@@ -1,0 +1,174 @@
+[2020-05-07 12:17:53] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "192.168.110.232"
+[2020-05-07 12:17:53] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2020042901000540008"}
+[2020-05-07 12:19:00] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "192.168.110.232"
+[2020-05-07 12:19:00] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2020042901000540008"}
+[2020-05-07 12:20:09] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 12:20:09] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2020042901000540008"}
+[2020-05-07 12:21:04] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 12:21:04] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 12:24:43] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 12:24:43] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 12:39:01] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 12:39:01] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 12:39:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 12:39:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 13:23:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 13:23:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 13:25:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 13:25:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:10:42] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:10:42] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:11:29] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:11:29] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:12:52] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:12:52] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:13:04] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:13:04] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:13:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:13:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:13:36] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:13:36] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:14:34] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:14:34] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:14:36] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:14:36] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:14:38] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:14:38] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:14:40] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:14:40] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:14:41] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:14:41] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:14:53] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:14:53] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:15:17] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:15:17] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:15:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:15:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:15:30] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:15:30] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:15:31] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:15:31] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:15:43] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:15:43] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:41:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:41:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:41:53] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:41:53] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:42:23] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:42:23] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:42:34] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:42:34] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:43:32] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:43:32] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:43:55] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:43:55] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:44:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:44:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:47:56] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:47:56] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:49:08] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:49:08] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061418000006002","orderNo":null,"gameId":null,"amount":"100","subject":null,"mode":null}
+[2020-05-07 14:49:29] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:49:29] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:53:24] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:53:24] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:53:54] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:53:54] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061418000006002","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-07 14:53:57] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:53:57] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:54:00] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:54:00] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:54:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:54:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:54:18] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:54:18] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:54:40] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:54:40] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061418000006002","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-07 14:54:44] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:54:44] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:54:45] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:54:45] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:55:04] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:55:04] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061418000006002","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-07 14:55:09] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:55:09] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:55:10] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:55:10] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:55:11] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:55:11] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:55:14] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:55:14] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:56:35] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:56:35] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061418000006002","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-07 14:56:37] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:56:37] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:56:38] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:56:38] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:56:39] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:56:39] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:57:21] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:57:21] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:57:26] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:57:26] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:58:31] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:58:31] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:58:54] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:58:54] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061311000003004","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-07 14:58:56] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:58:56] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:59:10] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:59:10] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061311000003004","orderNo":null,"gameId":null,"amount":"100","subject":null,"mode":null}
+[2020-05-07 14:59:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:59:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:59:20] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:59:20] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:59:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:59:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061311000003004","orderNo":null,"gameId":null,"amount":"100","subject":null,"mode":null}
+[2020-05-07 14:59:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:59:33] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061311000003004","orderNo":null,"gameId":null,"amount":"100","subject":null,"mode":null}
+[2020-05-07 14:59:36] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:59:36] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 14:59:46] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 14:59:46] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061311000003004","orderNo":null,"gameId":null,"amount":"100","subject":null,"mode":null}
+[2020-05-07 14:59:48] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 14:59:48] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:01:04] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:01:04] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:01:22] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 15:01:22] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061311000003004","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-07 15:01:26] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:01:26] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:01:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:01:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:02:14] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 15:02:14] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2019061311000003004","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-07 15:02:18] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:02:18] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:03:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:03:16] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:04:22] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:04:22] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:05:34] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:05:34] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:05:40] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:05:40] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:05:53] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:05:53] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:06:06] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:06:06] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:07:51] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:07:51] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:07:58] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:07:58] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:08:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:08:27] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:11:35] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:11:35] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 15:12:28] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 15:12:28] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}
+[2020-05-07 16:46:37] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 16:46:37] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2020032122000558371","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-07 16:46:57] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-07 16:46:57] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2020032122000558371","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-07 17:07:43] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 11: message: this is getPromoterProfit "127.0.0.1"
+[2020-05-07 17:07:43] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\getPromoterProfit.php : 16: message: the params: {"userId":"2019061418000006002"}

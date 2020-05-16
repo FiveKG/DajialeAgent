@@ -1,0 +1,97 @@
+{
+  "pages": {
+    "dailyReport" : {
+      "tabs": [
+        {
+          "title": "新增玩家",
+          "key": "new_players",
+          "column": [
+            { "prop": "create_at", "label": "日期", "sortable": false },
+            { "prop": "oneTotal", "label": "某天新增玩家数量", "sortable": false }
+          ]
+        },{
+          "title": "活跃玩家",
+          "key": "active_players",
+          "column": [
+            { "prop": "date", "label": "日期", "sortable": false },
+            { "prop": "new_player", "label": "新玩家", "sortable": false },
+            { "prop": "old_player", "label": "老玩家", "sortable": false },
+            { "prop": "oneTotal", "label": "当天活跃数量", "sortable": false }
+          ]
+        },{
+          "title": "充值玩家",
+          "key": "charge_players",
+          "column": [
+            { "prop": "date", "label": "日期", "sortable": false },
+            { "prop": "new_player", "label": "新玩家", "sortable": false },
+            { "prop": "old_player", "label": "老玩家", "sortable": false },
+            { "prop": "oneTotal", "label": "当天活跃数量", "sortable": false }
+          ]
+        },{
+          "title": "总场次",
+          "key": "game_total",
+          "column": [
+            { "prop": "date", "label": "日期", "sortable": false },
+            { "prop": "1", "label": "快速赛", "sortable": false },
+            { "prop": "2", "label": "晋级赛", "sortable": false },
+            { "prop": "3", "label": "定时赛", "sortable": false },
+            { "prop": "4", "label": "大奖赛", "sortable": false },
+            { "prop": "5", "label": "好友赛", "sortable": false }
+          ]
+        }
+      ]
+    },
+    "managementPlayer": {
+      "tabs": [
+       {
+          "title": "充值信息",
+          "key": "chargeInfo",
+          "column": [
+            { "prop": "createTime", "label": "时间", "sortable": false },
+            { "prop": "amount", "label": "充值额度", "sortable": false },
+            { "prop": "subject", "label": "充值币种", "sortable": false },
+            { "prop": "status", "label": "状态", "sortable": false },
+            { "prop": "mode", "label": "充值方式", "sortable": false }
+          ]
+       },
+        {
+          "title": "提现信息",
+          "key": "cashInfo",
+          "column": [
+            { "prop": "createTime", "label": "时间", "sortable": false },
+            { "prop": "tradeNo", "label": "订单号", "sortable": false },
+            { "prop": "amount", "label": "提现金额", "sortable": false },
+            { "prop": "status", "label": "状态", "sortable": false }
+          ]
+       },
+        {
+          "title": "参赛记录",
+          "key": "joinInfo",
+          "headerInfo": [
+            {"name": "快速赛", "key": "1"},
+            {"name": "晋级赛", "key": "2"},
+            {"name": "定时赛", "key": "3"},
+            {"name": "大奖赛", "key": "4"},
+            {"name": "好友赛", "key": "5"}
+          ],
+          "footInfo": [
+            {"name": "当前页报名乐券数量", "key": "consume_total"},
+            {"name": "奖金", "key": "award_total"},
+            {"name": "天梯", "key": "ladder_total"}
+          ],
+          "column": [
+            { "prop": "matchid", "label": "赛事ID", "sortable": false },
+            { "prop": "create_at", "label": "报名时间", "sortable": false },
+            { "prop": "localeName", "label": "赛事名称", "sortable": false },
+            { "prop": "category", "label": "赛事类型", "sortable": false },
+            { "prop": "consume_amount", "label": "报名费用", "sortable": false },
+            { "prop": "award", "label": "奖励", "sortable": false },
+            { "prop": "ladder", "label": "天梯积分", "sortable": false },
+            { "prop": "score", "label": "比赛分数", "sortable": false },
+            { "prop": "rank", "label": "获奖名次", "sortable": false }
+          ]
+        }
+      ]
+    }
+  }
+}

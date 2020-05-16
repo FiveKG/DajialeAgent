@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b078932-4b79-4aaf-a171-75cc14246d1e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\workSpace\server\trunk\php\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="ProjectId" id="1XTI4KI5GPfJthNzQcj54a6a1gU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunManager" selected="PHP Script.debug.php">
+    <configuration name="debug.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/util/debug.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="text.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/text.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="toolForExcel.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/util/toolForExcel.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="toolForSyn2DJL.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/util/toolForSyn2DJL.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="toolForSyn.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/util/toolForSyn.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.debug.php" />
+        <item itemvalue="PHP Script.toolForSyn2DJL.php" />
+        <item itemvalue="PHP Script.toolForExcel.php" />
+        <item itemvalue="PHP Script.toolForSyn.php" />
+        <item itemvalue="PHP Script.text.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ASUS\AppData\Roaming\Subversion</configuration>
+    <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b078932-4b79-4aaf-a171-75cc14246d1e" name="Default Changelist" comment="" />
+      <created>1580788217896</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580788217896</updated>
+      <workItem from="1580788220606" duration="3244000" />
+      <workItem from="1580872241103" duration="2046000" />
+      <workItem from="1580875187768" duration="14000" />
+      <workItem from="1581050329409" duration="2632000" />
+      <workItem from="1581063480975" duration="1254000" />
+      <workItem from="1581064835411" duration="4000" />
+      <workItem from="1581065296260" duration="7947000" />
+      <workItem from="1581143337451" duration="1582000" />
+      <workItem from="1586401774227" duration="2983000" />
+      <workItem from="1586405145264" duration="4000" />
+      <workItem from="1586601168461" duration="294000" />
+      <workItem from="1587474676612" duration="135000" />
+      <workItem from="1587474950834" duration="14880000" />
+      <workItem from="1588676382288" duration="29122000" />
+      <workItem from="1588762569163" duration="61049000" />
+      <workItem from="1589087736305" duration="27285000" />
+      <workItem from="1589184110330" duration="20804000" />
+      <workItem from="1589265032769" duration="28976000" />
+      <workItem from="1589298955973" duration="32488000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020-05-05" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-05-05" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="302" y="164" key="#CLI_Interpreters" timestamp="1581063659582">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="302" y="164" key="#CLI_Interpreters/62.0.1858.1080@62.0.1858.1080" timestamp="1581063659582" />
+    <state x="577" y="261" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586601338401">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="445" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581065500470" />
+    <state x="577" y="261" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1586601338401" />
+    <state x="1041" y="278" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588846701033">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1041" y="278" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1588846701033" />
+    <state x="1041" y="464" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588847383888">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1041" y="464" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1588847383888" />
+    <state x="1081" y="397" key="#toolForExcel.php" timestamp="1589119569699">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state x="1081" y="397" key="#toolForExcel.php/78.0.2482.1440@78.0.2482.1440" timestamp="1589119569699" />
+    <state x="1081" y="397" key="#toolForSyn.php" timestamp="1589125344449">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state x="1081" y="397" key="#toolForSyn.php/78.0.2482.1440@78.0.2482.1440" timestamp="1589125344449" />
+    <state x="1063" y="586" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588847901600">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1063" y="586" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.0.2498.1440@62.0.2498.1440" timestamp="1588847901600" />
+    <state x="654" y="352" key="FileChooserDialogImpl" timestamp="1588676792676">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="502" y="264" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1581144905410" />
+    <state x="654" y="352" key="FileChooserDialogImpl/62.0.2498.1440@62.0.2498.1440" timestamp="1588676792676" />
+    <state width="2439" height="615" key="GridCell.Tab.0.bottom" timestamp="1589314673633">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state width="2455" height="661" key="GridCell.Tab.0.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1589026868582" />
+    <state width="2439" height="615" key="GridCell.Tab.0.bottom/78.0.2482.1440@78.0.2482.1440" timestamp="1589314673633" />
+    <state width="2439" height="615" key="GridCell.Tab.0.center" timestamp="1589314673633">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state width="2455" height="661" key="GridCell.Tab.0.center/62.0.2498.1440@62.0.2498.1440" timestamp="1589026868582" />
+    <state width="2439" height="615" key="GridCell.Tab.0.center/78.0.2482.1440@78.0.2482.1440" timestamp="1589314673633" />
+    <state width="2439" height="615" key="GridCell.Tab.0.left" timestamp="1589314673633">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state width="2455" height="661" key="GridCell.Tab.0.left/62.0.2498.1440@62.0.2498.1440" timestamp="1589026868582" />
+    <state width="2439" height="615" key="GridCell.Tab.0.left/78.0.2482.1440@78.0.2482.1440" timestamp="1589314673633" />
+    <state width="2439" height="615" key="GridCell.Tab.0.right" timestamp="1589314673633">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state width="2455" height="661" key="GridCell.Tab.0.right/62.0.2498.1440@62.0.2498.1440" timestamp="1589026868582" />
+    <state width="2439" height="615" key="GridCell.Tab.0.right/78.0.2482.1440@78.0.2482.1440" timestamp="1589314673633" />
+    <state width="2439" height="615" key="GridCell.Tab.1.bottom" timestamp="1589314673577">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state width="2455" height="661" key="GridCell.Tab.1.bottom/62.0.2498.1440@62.0.2498.1440" timestamp="1589026868583" />
+    <state width="2439" height="615" key="GridCell.Tab.1.bottom/78.0.2482.1440@78.0.2482.1440" timestamp="1589314673577" />
+    <state width="2439" height="615" key="GridCell.Tab.1.center" timestamp="1589314673577">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state width="2455" height="661" key="GridCell.Tab.1.center/62.0.2498.1440@62.0.2498.1440" timestamp="1589026868582" />
+    <state width="2439" height="615" key="GridCell.Tab.1.center/78.0.2482.1440@78.0.2482.1440" timestamp="1589314673577" />
+    <state width="2439" height="615" key="GridCell.Tab.1.left" timestamp="1589314673577">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state width="2455" height="661" key="GridCell.Tab.1.left/62.0.2498.1440@62.0.2498.1440" timestamp="1589026868582" />
+    <state width="2439" height="615" key="GridCell.Tab.1.left/78.0.2482.1440@78.0.2482.1440" timestamp="1589314673577" />
+    <state width="2439" height="615" key="GridCell.Tab.1.right" timestamp="1589314673577">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state width="2455" height="661" key="GridCell.Tab.1.right/62.0.2498.1440@62.0.2498.1440" timestamp="1589026868583" />
+    <state width="2439" height="615" key="GridCell.Tab.1.right/78.0.2482.1440@78.0.2482.1440" timestamp="1589314673577" />
+    <state x="1134" y="641" key="NewPhpFileDialog" timestamp="1589214957873">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state x="1125" y="641" key="NewPhpFileDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1589013338103" />
+    <state x="1134" y="641" key="NewPhpFileDialog/78.0.2482.1440@78.0.2482.1440" timestamp="1589214957873" />
+    <state x="933" y="247" key="SettingsEditor" timestamp="1588734125637">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="710" y="185" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1581143445677" />
+    <state x="933" y="247" key="SettingsEditor/62.0.2498.1440@62.0.2498.1440" timestamp="1588734125637" />
+    <state x="154" y="92" width="2314" height="1256" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586601321406">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="154" y="92" width="2314" height="1256" key="com.intellij.history.integration.ui.views.FileHistoryDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1586601321406" />
+    <state x="683" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1581063507371">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="683" y="367" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581063507370" />
+    <state x="865" y="454" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589217023324">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state x="865" y="454" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/78.0.2482.1440@78.0.2482.1440" timestamp="1589217023324" />
+    <state x="981" y="454" width="659" height="532" key="find.popup" timestamp="1588847681876">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="981" y="454" width="659" height="532" key="find.popup/62.0.2498.1440@62.0.2498.1440" timestamp="1588847681876" />
+    <state x="1097" y="399" key="run.anything.popup" timestamp="1589124059488">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state x="825" y="299" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1581143325530" />
+    <state x="1088" y="399" key="run.anything.popup/62.0.2498.1440@62.0.2498.1440" timestamp="1587498119745" />
+    <state x="1097" y="399" key="run.anything.popup/78.0.2482.1440@78.0.2482.1440" timestamp="1589124059488" />
+    <state x="984" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1589123981242">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state x="974" y="325" width="672" height="678" key="search.everywhere.popup/62.0.2498.1440@62.0.2498.1440" timestamp="1588826039176" />
+    <state x="984" y="325" width="672" height="678" key="search.everywhere.popup/78.0.2482.1440@78.0.2482.1440" timestamp="1589123981242" />
+    <state x="1000" y="531" key="svn.passwordDialog" timestamp="1581143486803">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="1000" y="531" key="svn.passwordDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581143486803" />
+    <state x="1233" y="617" key="svn.repositoryBrowser" timestamp="1588676794988">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="933" y="463" key="svn.repositoryBrowser/62.0.1858.1080@62.0.1858.1080" timestamp="1581144693535" />
+    <state x="1233" y="617" key="svn.repositoryBrowser/62.0.2498.1440@62.0.2498.1440" timestamp="1588676794988" />
+    <state x="994" y="521" key="svn.sslDialog" timestamp="1581143476879">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="994" y="521" key="svn.sslDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581143476879" />
+    <state x="1295" y="716" key="svn.upgradeDialog" timestamp="1588676697115">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="979" y="537" key="svn.upgradeDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581144909044" />
+    <state x="1295" y="716" key="svn.upgradeDialog/62.0.2498.1440@62.0.2498.1440" timestamp="1588676697115" />
+    <state x="1042" y="733" key="svn4idea.checkout.options" timestamp="1586601450320">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="791" y="550" key="svn4idea.checkout.options/62.0.1858.1080@62.0.1858.1080" timestamp="1581144907383" />
+    <state x="1042" y="733" key="svn4idea.checkout.options/62.0.2498.1440@62.0.2498.1440" timestamp="1586601450320" />
+    <state x="1257" y="581" key="svn4idea.import.options" timestamp="1588676794595">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="951" y="436" key="svn4idea.import.options/62.0.1858.1080@62.0.1858.1080" timestamp="1581144683359" />
+    <state x="1257" y="581" key="svn4idea.import.options/62.0.2498.1440@62.0.2498.1440" timestamp="1588676794595" />
+  </component>
+</project>

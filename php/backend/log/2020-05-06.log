@@ -1,0 +1,10 @@
+[2020-05-06 19:22:00] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-06 19:22:00] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2020043019000661865","orderNo":null,"gameId":null,"amount":"1100","subject":null,"mode":null}
+[2020-05-06 19:36:42] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-06 19:36:42] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2020042820000669313","orderNo":null,"gameId":null,"amount":"11000","subject":null,"mode":null}
+[2020-05-06 19:36:56] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-06 19:36:56] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2020042820000669313","orderNo":null,"gameId":null,"amount":"11000","subject":null,"mode":null}
+[2020-05-06 19:37:05] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 8: message: this is consume "127.0.0.1"
+[2020-05-06 19:37:05] [DEBUG]: E:\workspace\server\trunk\php\gameApi\playerConsume.php : 18: message: the params: {"userId":"2020042820000669313","orderNo":null,"gameId":null,"amount":"11000","subject":null,"mode":null}
+[2020-05-06 20:29:00] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isAward.php : 8: message: this is isAward "127.0.0.1"
+[2020-05-06 20:29:00] [DEBUG]: E:\workspace\server\trunk\php\gameApi\promotion\isAward.php : 13: message: the params: {"userId":"2020042916000551040"}

@@ -1,0 +1,328 @@
+{
+    "name" : "operation",
+    "service_type" : "service",
+    "apis" : [
+        {
+            "name" : "承办方商登录",
+            "summary": "返回token以后每次访问把token设置再header里",
+            "url" : "trunk/php/backend/agent/agentLogin.php",
+            "type" : "post",
+            "req": {
+                "tel": { "type": "text",    "desc": "手机号码" },
+                "password":{ "type": "text",    "desc": "密码"}
+            },
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+                "data": {
+                    "token" : { "type": "text",    "desc": "token"}
+                }
+            }
+        },
+        {
+            "name" : "承办方商登出",
+            "summary": "需要删除token",
+            "url" : "trunk/php/backend/agent/agentLogout.php",
+            "type" : "get",
+            "req": {},
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+                "data": {}
+            }
+        },
+        {
+            "name" : "主页",
+            "summary": "",
+            "url" : "trunk/php/backend/agent/agentInfo.php",
+            "type" : "get",
+            "req": {},
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+                "data": {
+                    "myInfo": {
+                        "type": "object", "desc": "我的信息",
+                        "properties": {
+                            "id": {"type": "text", "desc": "代理商id"},
+                            "level": {"type": "text", "desc": "等级"},
+                            "username": {"type": "text", "desc": "用户名"},
+                            "profit": {"type": "text", "desc": "我的分成"},
+                            "parent_tel": {"type": "text", "desc": "上级电话，一级代理商没有"},
+                            "player_total": {"type": "text", "desc": "代理玩家总数"},
+                            "agent_total": {"type": "text", "desc": "我的下级代理商总数"}
+                        }
+                    },
+                    "myPlayerInfo": {
+                        "type": "object", "desc": "我的玩家信息总览",
+                        "properties": {
+                            "playerTotal" :{"type": "object", "desc": "玩家充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            },
+                            "playerThisMonthTotal" :{"type": "object", "desc": "玩家本月充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            },
+                            "playerLastMonthTotal" :{"type": "object", "desc": "玩家上月充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            },
+                            "playerTodayTotal" :{"type": "object", "desc": "玩家今日充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            },
+                            "playerYesterdayTotal" :{"type": "object", "desc": "玩家昨日充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            }
+                        }
+                    },
+                    "myAgentsInfo": {
+                        "type": "object", "desc": "我的代理商信息总览",
+                        "properties": {
+                            "AgentTotal" :{"type": "object", "desc": "代理商充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            },
+                            "AgentThisMonthTotal" :{"type": "object", "desc": "代理商本月充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            },
+                            "AgentLastMonthTotal" :{"type": "object", "desc": "代理商上月充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            },
+                            "AgentTodayTotal" :{"type": "object", "desc": "代理商今天充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            },
+                            "AgentYesterdayTotal" :{"type": "object", "desc": "代理商昨天充值/消耗总额", "properties" : {
+                                "charge_total": {"type": "text", "desc": "充值总额"},
+                                "consume_total": {"type": "text", "desc": "消费总额"},
+                                "fast_consume_total": {"type": "text", "desc": "快速赛事消费总额"},
+                                "other_consume_total": {"type": "text", "desc": "其他赛事消费总额"}}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name" : "查看我的收益",
+            "summary": "",
+            "url" : "trunk/php/backend/agent/getAgentProfit.php",
+            "type" : "get",
+            "req": {},
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+                "data": {
+                    "ProfitFromPlayer": {
+                        "type": "object", "desc": "来自我的玩家收益", "properties": {
+                            "fast_total": {"type": "text", "desc": "快速赛收益"},
+                            "other_total": {"type": "text", "desc": "其他赛事收益"}}
+                    },
+                    "getProfitFromAgent": {
+                        "type": "object", "desc": "来自我的代理收益", "properties": {
+                            "fast_total": {"type": "text", "desc": "快速赛收益"},
+                            "other_total": {"type": "text", "desc": "其他赛事收益"}}
+                    }
+                }
+            }
+        },
+        {
+            "name" : "我的玩家总览信息",
+            "summary": "",
+            "url" : "trunk/php/backend/agent/myPlayerInfo.php",
+            "type" : "get",
+            "req": {
+                "type" : { "type": "text",    "desc": "fission, direct, all" }
+            },
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+                "data": {
+                       "total" : { "type": "text",    "desc": "玩家总数" },
+                       "today" : { "type": "text",    "desc": "今日新增玩家" },
+                       "yesterday" : { "type": "text",    "desc": "昨晚新增玩家" },
+                       "charge_total" : { "type": "text",    "desc": "玩家充值总额" },
+                       "consume_total" : { "type": "text",    "desc": "玩家消费总额" }
+                }
+            }
+        },
+        {
+            "name" : "按年月获取代理玩家充值/消费总额",
+            "summary": "",
+            "url" : "trunk/php/backend/agent/myPlayerByRange.php",
+            "type" : "get",
+            "req": {
+                "startDate" :  { "type": "text",    "desc": "起始时间,格式：'xxxx-xx-xx',必须参数" },
+                "endDate" :  { "type": "text",    "desc": "结束时间，格式：'xxxx-xx-xx',必须参数" },
+                "type" : { "type": "text",    "desc": "fission, direct, all" }
+            },
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": 20000 } ,
+                "data": {
+                        "charge_total" : { "type": "text",    "desc": "该年月充值总额" },
+                        "consume_total" : { "type": "text",    "desc": "该年月消费总额" }
+                }
+            }
+        },
+        {
+            "name": "获取全部的玩家列表",
+            "summary": "",
+            "url": "trunk/php/backend/agent/myPlayerList.php",
+            "type": "get",
+            "req": {
+                "page": {"type": "text", "desc": "页数"},
+                "limit": {"type": "text", "desc": "每页数量"},
+                "type": {"type": "text", "desc": "fission, direct, all"}
+            },
+            "res": {
+                "code": {"type": "number", "desc": "", "values": 20000
+                },
+                "data": {"type": "objectArray", "desc": "玩家列表", "properties": {
+                        "id": {"type": "text", "desc": "玩家id"},
+                        "username": {"type": "text", "desc": "玩家用户名"},
+                        "charge_total": {"type": "text", "desc": "玩家充值总额"},
+                        "consume_total": {"type": "text", "desc": "玩家消费总额"},
+                        "tel": {"type": "text", "desc": "玩家电话"},
+                        "create_at": {"type": "text", "desc": "玩家创建时间"}
+                    }
+                }
+            }
+        },
+        {
+            "name": "获取我的代理商列表",
+            "summary": "",
+            "url": "trunk/php/backend/agent/myAgentList.php",
+            "type": "get",
+            "req": {
+                "page": {"type": "text", "desc": "页数"},
+                "limit": {"type": "text", "desc": "每页数量"}
+            },
+            "res": {
+                "code": {"type": "number", "desc": "", "values": 20000},
+                "data": {
+                    "agent_total": {"type": "int",    "desc": "我的代理商数量"},
+                    "my_agent_list": {"type": "objectArray", "desc": "代理商列表", "properties": {
+                            "id": {"type": "text", "desc": "下级代理商id"},
+                            "username": {"type": "text", "desc": "代理商用户名"},
+                            "tel": {"type": "text", "desc": "代理商电话"},
+                            "level": {"type": "text", "desc": "代理商等级(大于1的都为2)"},
+                            "status": {"type": "text", "desc": "状态，1为正常，仅显示正常的"},
+                            "apply_at": {"type": "text", "desc": "绑定时间"},
+                            "player_total": {"type": "text", "desc": "拥有玩家总数"},
+                            "agent_total": {"type": "text", "desc": "拥有代理商总数"},
+                            "charge_total": {"type": "text", "desc": "充值总数"},
+                            "consume_total": {"type": "text", "desc": "消费总数"},
+                            "sub_charge_total": {"type": "text", "desc": "下级代理充值总数"},
+                            "sub_consume_total": {"type": "text", "desc": "下级代理消费总数"},
+                            "sub_player_total": {"type": "text", "desc": "下级选手数量"},
+                            "profit": {"type": "text", "desc": "分成百分比"}
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "获取我代理商总览",
+            "summary": "",
+            "url": "trunk/php/backend/agent/getAgentSummary.php",
+            "type": "get",
+            "req": {
+                "startDate": {"type": "text", "desc": "起始时间"},
+                "endDate": {"type": "text", "desc": "结束时间"}
+            },
+            "res": {
+                "code": {"type": "number", "desc": "", "values": 20000},
+                "data": {"type": "objectArray", "desc": "代理商列表", "properties": {
+                        "date": {"type": "text", "desc": "日期"},
+                        "allPlayerCharge": {"type": "text", "desc": "所有玩家充值总额"},
+                        "allPlayerConsume": {"type": "text", "desc": "所有玩家消费总额"},
+                        "agentPlayerConsume": {"type": "text", "desc": "所有代理商下玩家充值总额"},
+                        "agentPlayerCharge": {"type": "text", "desc": "所有代理商下玩家消费总额"}
+                    }
+                }
+            }
+        },
+        {
+            "name": "注册代理",
+            "summary": "",
+            "url": "trunk/php/backend/agent/register.php",
+            "type": "post",
+            "req": {
+                "pid": {"type": "text", "desc": "上级代理商id"},
+                "username": {"type": "text", "desc": "用户名"},
+                "password": {"type": "text", "desc": "密码，至少6位数"},
+                "tel": {"type": "text", "desc": "手机号码，11位数字"}
+            },
+            "res": {
+                "code": {"type": "number", "desc": "", "values": 20000},
+                "data": {"type": "bool", "desc": "注册结果"}
+            }
+        },
+        {
+            "name": "获取待审核列表",
+            "summary": "",
+            "url": "trunk/php/backend/agent/getApplyList.php",
+            "type": "post",
+            "req": {
+            },
+            "res": {
+                "code": {"type": "number", "desc": "", "values": 20000},
+                "data": {"type": "objectArray", "desc": "返回待审核列表", "properties": {
+                        "id": {"type": "text", "desc": "待审核代理id"},
+                        "username": {"type": "text", "desc": "用户名"},
+                        "level": {"type": "text", "desc": "级别"},
+                        "tel": {"type": "text", "desc": "电话"},
+                        "create_at": {"type": "text", "desc": "申请时间"}
+                    }
+                }
+            }
+        },
+        {
+            "name": "操作审核",
+            "summary": "",
+            "url": "trunk/php/backend/agent/operateApply.php",
+            "type": "get",
+            "req": {
+                "agentId": {"type": "text", "desc": "代理商id"},
+                "type": {"username": "text", "desc": "操作:agree||refuse"},
+                "note": {"username": "text", "desc": "备注,可有可无"}
+            },
+            "res": {
+                "code": {"type": "number", "desc": "", "values": 20000},
+                "data": {"type": "bool", "desc": "操作结果"}
+            }
+        },
+        {
+            "name": "修改下级代理商的收益比例",
+            "summary": "",
+            "url": "trunk/php/backend/agent/setProfit.php",
+            "type": "get",
+            "req": {
+                "agentId": {"type": "text", "desc": "代理商id"},
+                "profit": {"username": "int", "desc": "比例"}
+            },
+            "res": {
+                "code": {"type": "number", "desc": "", "values": 20000},
+                "data": {"type": "bool", "desc": "操作结果"}
+            }
+        }
+    ]
+}
